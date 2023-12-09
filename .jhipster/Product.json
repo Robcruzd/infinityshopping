@@ -1,17 +1,19 @@
 {
+  "changelogDate": "20231209002019",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "productCategoryEnum",
       "fieldType": "ProductCategoryEnum",
-      "fieldValues": "Vitamins,Minerals",
-      "fieldValidateRules": ["required"]
+      "fieldValidateRules": ["required"],
+      "fieldValues": "Vitamins,Minerals"
     },
     {
       "fieldName": "name",
       "fieldType": "String",
       "fieldValidateRules": ["required", "minlength", "maxlength"],
-      "fieldValidateRulesMinlength": "0",
-      "fieldValidateRulesMaxlength": "5000"
+      "fieldValidateRulesMaxlength": "5000",
+      "fieldValidateRulesMinlength": "0"
     },
     {
       "fieldName": "quantity",
@@ -21,15 +23,15 @@
       "fieldName": "priceNet",
       "fieldType": "BigDecimal",
       "fieldValidateRules": ["required", "min", "max"],
-      "fieldValidateRulesMin": "0",
-      "fieldValidateRulesMax": "1000000"
+      "fieldValidateRulesMax": "1000000",
+      "fieldValidateRulesMin": "0"
     },
     {
       "fieldName": "vat",
       "fieldType": "BigDecimal",
       "fieldValidateRules": ["required", "min", "max"],
-      "fieldValidateRulesMin": "5",
-      "fieldValidateRulesMax": "100"
+      "fieldValidateRulesMax": "100",
+      "fieldValidateRulesMin": "5"
     },
     {
       "fieldName": "priceGross",
@@ -39,16 +41,16 @@
       "fieldName": "stock",
       "fieldType": "BigDecimal",
       "fieldValidateRules": ["required", "min", "max"],
-      "fieldValidateRulesMin": "0",
-      "fieldValidateRulesMax": "1000000"
+      "fieldValidateRulesMax": "1000000",
+      "fieldValidateRulesMin": "0"
     },
     {
       "fieldName": "description",
       "fieldType": "byte[]",
       "fieldTypeBlobContent": "text",
       "fieldValidateRules": ["required", "minlength", "maxlength"],
-      "fieldValidateRulesMinlength": "0",
-      "fieldValidateRulesMaxlength": "10000"
+      "fieldValidateRulesMaxlength": "10000",
+      "fieldValidateRulesMinlength": "0"
     },
     {
       "fieldName": "createTime",
@@ -65,13 +67,12 @@
       "fieldValidateRules": ["required"]
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "Product",
+  "pagination": "pagination",
+  "readOnly": false,
   "relationships": [],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "pagination",
-  "name": "Product",
   "skipClient": true,
   "skipServer": true
 }

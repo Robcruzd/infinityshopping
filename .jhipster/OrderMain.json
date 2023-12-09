@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002025",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "buyerLogin",
@@ -58,20 +60,19 @@
       "fieldType": "Instant"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "OrderMain",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "productInOrderMain",
       "otherEntityName": "productInOrderMain",
-      "relationshipType": "one-to-many",
-      "otherEntityRelationshipName": "orderMain"
+      "otherEntityRelationshipName": "orderMain",
+      "relationshipName": "productInOrderMain",
+      "relationshipType": "one-to-many"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "OrderMain",
   "skipClient": true,
   "skipServer": true
 }

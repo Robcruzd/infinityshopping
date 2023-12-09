@@ -1,25 +1,27 @@
 {
+  "changelogDate": "20231209002021",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "name",
       "fieldType": "String",
       "fieldValidateRules": ["required", "minlength", "maxlength"],
-      "fieldValidateRulesMinlength": "0",
-      "fieldValidateRulesMaxlength": "1000"
+      "fieldValidateRulesMaxlength": "1000",
+      "fieldValidateRulesMinlength": "0"
     },
     {
       "fieldName": "priceNet",
       "fieldType": "BigDecimal",
       "fieldValidateRules": ["required", "min", "max"],
-      "fieldValidateRulesMin": "0",
-      "fieldValidateRulesMax": "10000"
+      "fieldValidateRulesMax": "10000",
+      "fieldValidateRulesMin": "0"
     },
     {
       "fieldName": "vat",
       "fieldType": "BigDecimal",
       "fieldValidateRules": ["required", "min", "max"],
-      "fieldValidateRulesMin": "0",
-      "fieldValidateRulesMax": "100"
+      "fieldValidateRulesMax": "100",
+      "fieldValidateRulesMin": "0"
     },
     {
       "fieldName": "priceGross",
@@ -39,13 +41,12 @@
       "fieldType": "Instant"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "Payment",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "Payment",
   "skipClient": true,
   "skipServer": true
 }

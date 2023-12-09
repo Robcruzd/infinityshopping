@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002022",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "name",
@@ -26,23 +28,22 @@
       "fieldValues": "WaitingForBankTransfer,PreparationForShipping"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "PaymentCart",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "cart",
-      "otherEntityName": "cart",
-      "relationshipType": "one-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "paymentCart"
+      "otherEntityField": "id",
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "paymentCart",
+      "ownerSide": true,
+      "relationshipName": "cart",
+      "relationshipType": "one-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "PaymentCart",
   "skipClient": true,
   "skipServer": true
 }

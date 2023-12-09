@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002023",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "firstName",
@@ -55,23 +57,22 @@
       "fieldValidateRulesMaxlength": "50"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "ShipmentCart",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "cart",
-      "otherEntityName": "cart",
-      "relationshipType": "one-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "shipmentCart"
+      "otherEntityField": "id",
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "shipmentCart",
+      "ownerSide": true,
+      "relationshipName": "cart",
+      "relationshipType": "one-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "ShipmentCart",
   "skipClient": true,
   "skipServer": true
 }

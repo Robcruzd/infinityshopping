@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002027",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "category",
@@ -51,23 +53,22 @@
       "fieldType": "Long"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "ProductInOrderMain",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "orderMain",
-      "otherEntityName": "orderMain",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "productInOrderMain"
+      "otherEntityField": "id",
+      "otherEntityName": "orderMain",
+      "otherEntityRelationshipName": "productInOrderMain",
+      "ownerSide": true,
+      "relationshipName": "orderMain",
+      "relationshipType": "many-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "ProductInOrderMain",
   "skipClient": true,
   "skipServer": true
 }

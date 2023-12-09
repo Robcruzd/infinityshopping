@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002026",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "name",
@@ -21,23 +23,22 @@
       "fieldValidateRules": ["required"]
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "PaymentOrderMain",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "orderMain",
-      "otherEntityName": "orderMain",
-      "relationshipType": "one-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "paymentOrderMain"
+      "otherEntityField": "id",
+      "otherEntityName": "orderMain",
+      "otherEntityRelationshipName": "paymentOrderMain",
+      "ownerSide": true,
+      "relationshipName": "orderMain",
+      "relationshipType": "one-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "PaymentOrderMain",
   "skipClient": true,
   "skipServer": true
 }

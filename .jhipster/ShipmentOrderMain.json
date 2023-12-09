@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002028",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "firstName",
@@ -55,23 +57,22 @@
       "fieldValidateRulesMaxlength": "50"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "ShipmentOrderMain",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "orderMain",
-      "otherEntityName": "orderMain",
-      "relationshipType": "one-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "shipmentOrderMain"
+      "otherEntityField": "id",
+      "otherEntityName": "orderMain",
+      "otherEntityRelationshipName": "shipmentOrderMain",
+      "ownerSide": true,
+      "relationshipName": "orderMain",
+      "relationshipType": "one-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "ShipmentOrderMain",
   "skipClient": true,
   "skipServer": true
 }

@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002024",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "category",
@@ -51,23 +53,22 @@
       "fieldType": "Long"
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "ProductInCart",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "cart",
-      "otherEntityName": "cart",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "id",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "productInCart"
+      "otherEntityField": "id",
+      "otherEntityName": "cart",
+      "otherEntityRelationshipName": "productInCart",
+      "ownerSide": true,
+      "relationshipName": "cart",
+      "relationshipType": "many-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "ProductInCart",
   "skipClient": true,
   "skipServer": true
 }

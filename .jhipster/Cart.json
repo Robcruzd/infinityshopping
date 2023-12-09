@@ -1,4 +1,6 @@
 {
+  "changelogDate": "20231209002020",
+  "dto": "mapstruct",
   "fields": [
     {
       "fieldName": "amountOfCartNet",
@@ -31,23 +33,22 @@
       "fieldValidateRules": ["required"]
     }
   ],
+  "jpaMetamodelFiltering": false,
+  "name": "Cart",
+  "pagination": "no",
+  "readOnly": false,
   "relationships": [
     {
-      "relationshipName": "user",
-      "otherEntityName": "user",
-      "relationshipType": "one-to-one",
-      "otherEntityField": "login",
-      "ownerSide": true,
       "id": false,
-      "otherEntityRelationshipName": "cart"
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "cart",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
     }
   ],
   "service": "serviceImpl",
-  "dto": "mapstruct",
-  "jpaMetamodelFiltering": false,
-  "readOnly": false,
-  "pagination": "no",
-  "name": "Cart",
   "skipClient": true,
   "skipServer": true
 }
